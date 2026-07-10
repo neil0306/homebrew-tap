@@ -11,6 +11,18 @@ class Bltusb < Formula
     bin.install "bltusb"
   end
 
+  # Auto-unlock daemon, delegated to `brew services` when bltusb is Homebrew-
+  # installed. A per-user agent (never a root LaunchDaemon): start it WITHOUT
+  # sudo via `brew services start bltusb` (or `bltusb autounlock install`).
+  service do
+    run [opt_bin/"bltusb", "__autounlock-daemon"]
+    run_type :immediate
+    keep_alive true
+    process_type :interactive
+    log_path "/dev/null"
+    error_log_path "/dev/null"
+  end
+
   def caveats
     <<~EOS
       bltusb needs the anylinuxfs backend (no macFUSE / no kernel extension).
