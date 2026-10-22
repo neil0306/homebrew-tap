@@ -1,8 +1,8 @@
 class Bltusb < Formula
   desc "Read/write BitLocker-encrypted USB drives on macOS (Apple Silicon)"
   homepage "https://github.com/neil0306/bltusb"
-  url "https://github.com/neil0306/bltusb/releases/download/v1.6.0/bltusb-1.6.0.tar.gz"
-  sha256 "65f0ac21f235e0e3aa7b1441a3d338c20ca30817cecb0340a7c0d57c39cfba76"
+  url "https://github.com/neil0306/bltusb/releases/download/v1.6.1/bltusb-1.6.1.tar.gz"
+  sha256 "c4510edf50a25c70b8ae1f447d3cdb3e19f4d607ef6b1ffbe8b98a1c95bfef9c"
   license "MIT"
 
   depends_on :macos
