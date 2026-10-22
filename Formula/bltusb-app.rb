@@ -19,9 +19,9 @@
 class BltusbApp < Formula
   desc "Zero-sudo BitLocker/NTFS/exFAT/ext USB mounting for macOS (discovery entry; installs via secure network installer)"
   homepage "https://github.com/neil0306/bltusb"
-  version "1.5.2"
-  url "https://github.com/neil0306/bltusb/releases/download/v1.5.2/bltusb-bundle-1.5.2-arm64.tar.gz"
-  sha256 "b71acd4d18dcb2fbda573da5a3e3d6731336a7d49e431401c549073a1beecab6"
+  version "1.6.0"
+  url "https://github.com/neil0306/bltusb/releases/download/v1.6.0/bltusb-bundle-1.6.0-arm64.tar.gz"
+  sha256 "f6cf89b070a77cc5b9dec24861823dcb0995df28cea51e9f8fdbc54595b0b1ba"
   license "MIT"
   depends_on arch: :arm64
   depends_on macos: :ventura           # Mode B XPC peer-requirement APIs
